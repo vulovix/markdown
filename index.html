@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Editor</title>
+    <!-- Keywords-->
+    <meta name="keywords" content="Markdown Editor, Preview Markdown Syntax, Create Markdown Note" />
+
+    <!-- Title -->
+    <meta name="title" content="Markdown Editor" />
+    <meta property="og:title" content="Markdown Editor" />
+    <meta property="twitter:title" content="Markdown Editor" />
+
+    <!-- Description -->
+    <meta name="description" content="Write and preview your Markdown documents." />
+    <meta property="og:description" content="Write and preview your Markdown documents.." />
+    <meta property="twitter:description" content="Write and preview your Markdown documents." />
+
+    <!-- Image -->
+
+    <meta property="og:image" content="https://markdown.iksos.com/meta.jpg" />
+    <meta property="twitter:image" content="https://markdown.iksos.com/meta.jpg" />
+
+    <!-- Image alt -->
+    <meta property="og:image:alt" content="Website Social Image" />
+    <meta property="twitter:image:alt" content="Website Social Image" />
+
+    <meta property="og:url" content="https://markdown.iksos.com" />
+
+    <!-- Card-->
+    <meta property="og:type" content="article" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <script src="marked.js"></script>
+    <link rel="stylesheet" href="foundation.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body class="fade-in">
+    <div class="markdown-editor">
+        <div class="column">
+            <textarea autocapitalize="off" autocomplete="off" autocorrect="off" id="editor" tab-size="2"
+                spellcheck="false">
+            </textarea>
+        </div>
+        <div class="column">
+            <div class="markdown-body"></div>
+        </div>
+    </div>
+    <script type="module" defer>
+        const defaultTheme = "atom-one-dark";
+        const defaultLanguage = "javascript";
+        const theme = localStorage.getItem("theme")
+            ? localStorage.getItem("theme") || defaultTheme
+            : defaultTheme;
+    </script>
+</body>
+
+</html>
