@@ -68,3 +68,8 @@ table tbody tr:nth-child(even){
 .column{
     padding: 0;
 }
+@media screen and (max-width: 840px) {
+    .markdown-editor {
+        grid-template-columns: 1fr;
+    }
+}
