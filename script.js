@@ -1,4 +1,4 @@
-const defaultValue = `- made with **[xOS Markdown](https://markdown.iksos.com)**
+const defaultValue = `- made with **[xOS Markdown](https://markdown.xos.dev)**
 
 # H1
 ## H2
