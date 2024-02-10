@@ -48,8 +48,8 @@ window.addEventListener("load", () => {
   editor.focus();
 });
 window.addEventListener("beforeunload", () => {
-  // const currentText = getTextToCopy();
-  // saveToStorage(currentText);
+  const currentText = getTextToCopy();
+  saveToStorage(currentText);
 });
 function copyToClipboard(text) {
   window.navigator.clipboard
