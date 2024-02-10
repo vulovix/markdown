@@ -32,8 +32,7 @@ Markdown | Less | Pretty
 *Still* | renders | **nicely**
 1 | 2 | 3
 
-Oh yeah, you can also use [links](#).
- 
+
 `;
 window.addEventListener("load", () => {
   const editor = document.querySelector("#editor");
