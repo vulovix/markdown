@@ -1,4 +1,4 @@
-const defaultValue = `**_made with markdown.dev_**
+const defaultValue = `- made with **[xOS Markdown](https://markdown.iksos.com)**
 
 # H1
 ## H2
@@ -37,7 +37,7 @@ Oh yeah, you can also use [links](#).
 `;
 window.addEventListener("load", () => {
   const editor = document.querySelector("#editor");
-  const storage = localStorage.getItem("Markdown Editor");
+  const storage = localStorage.getItem("xOS_Markdown_Editor");
   if (storage) {
     editor.value = storage;
   } else if (storage === null) {
@@ -48,8 +48,8 @@ window.addEventListener("load", () => {
   editor.focus();
 });
 window.addEventListener("beforeunload", () => {
-  const currentText = getTextToCopy();
-  saveToStorage(currentText);
+  // const currentText = getTextToCopy();
+  // saveToStorage(currentText);
 });
 function copyToClipboard(text) {
   window.navigator.clipboard
@@ -58,7 +58,7 @@ function copyToClipboard(text) {
     .catch(() => null);
 }
 function saveToStorage(text) {
-  localStorage.setItem("Markdown Editor", text);
+  localStorage.setItem("xOS_Markdown_Editor", text);
 }
 function getTextToCopy() {
   const textToCopy = document.querySelector("#editor");
